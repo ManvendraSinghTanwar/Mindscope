@@ -160,7 +160,7 @@ export default function ChatPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Chat Interface */}
           <div className="lg:col-span-3">
-            <Card className="h-[600px] flex flex-col">
+            <Card className="min-h-[600px] max-h-[80vh] flex flex-col overflow-y-auto">
               <CardHeader className="border-b">
                 <CardTitle className="flex items-center space-x-2">
                   <Heart className="h-5 w-5 text-purple-600" />
@@ -171,7 +171,7 @@ export default function ChatPage() {
 
               {/* Messages Area */}
               <CardContent className="flex-1 p-0">
-                <ScrollArea className="h-full p-4" ref={scrollAreaRef}>
+                <ScrollArea className="h-full p-4 overflow-y-auto" ref={scrollAreaRef}>
                   <div className="space-y-4">
                     {messages.map((message) => (
                       <div
@@ -208,26 +208,6 @@ export default function ChatPage() {
                               </p>
                             </div>
                           </div>
-
-                          {/* AI Suggestions */}
-                          {message.type === "ai" && message.suggestions && (
-                            <div className="mt-3 ml-10">
-                              <p className="text-xs text-gray-500 mb-2">Quick responses:</p>
-                              <div className="flex flex-wrap gap-2">
-                                {message.suggestions.map((suggestion, index) => (
-                                  <Button
-                                    key={index}
-                                    variant="outline"
-                                    size="sm"
-                                    className="text-xs"
-                                    onClick={() => sendMessage(suggestion)}
-                                  >
-                                    {suggestion}
-                                  </Button>
-                                ))}
-                              </div>
-                            </div>
-                          )}
                         </div>
                       </div>
                     ))}
