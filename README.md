@@ -6,7 +6,7 @@ Mental health is a crucial aspect of well-being, but many people still struggle 
 ## What It Does  
 MindScope is a mental health companion app designed to provide users with a supportive and reflective environment. Users can write and analyze journal entries using AI-powered mood and emotion detection. They can also chat with an AI mental health companion for real-time support and guidance. The app enables tracking of daily mood, stress, energy, and sleep. It also allows users to record voice check-ins, which are analyzed for emotional tone.  
 Additional features include privacy and notification management, access to crisis resources, and reminders for professional help.
-Try it out:[link](https://mindscope-five.vercel.app/)
+Try it out:[MINDSCOPE - Reflect Better. Feel Better. Live Better. ](https://mindscope-five.vercel.app/)
 
 ## How We Built It  
 The frontend is built using **React** and **Next.js**, offering a responsive design with modern UI components. We integrated AI capabilities using the **Llama 3.3-70B-Instruct-Turbo** model via the **Together API** for journal analysis and conversations. A **rule-based system** complements the AI by handling specific triggers, keyword recognition, and fallback logic to ensure consistent and safe responses.  User data such as journal entries, chat history, moods, and settings is stored locally in **JSON format** to protect user privacy.  The app features a dynamic chat UI with smooth auto-scrolling, easy entry deletion, and robust error handling.
