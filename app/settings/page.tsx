@@ -17,10 +17,10 @@ export default function SettingsPage() {
   const [isSaving, setIsSaving] = useState(false)
   const [saveSuccess, setSaveSuccess] = useState(false)
   const [userProfile, setUserProfile] = useState({
-    firstName: "Alex",
-    lastName: "Johnson",
-    email: "alex.johnson@email.com",
-    timezone: "Eastern Time (ET)",
+    firstName: "Smart",
+    lastName: "Builders",
+    email: "SmartBuilders@gmail.com",
+    timezone: "Indian Standard Time(IST)",
   })
 
   useEffect(() => {
@@ -323,7 +323,7 @@ export default function SettingsPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm">Member Since</span>
-                    <span className="text-sm text-gray-600">Jan 2024</span>
+                    <span className="text-sm text-gray-600">May 2025</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm">Data Usage</span>
@@ -379,7 +379,7 @@ export default function SettingsPage() {
                     <strong>National Suicide Prevention:</strong> 988
                   </p>
                   <p>
-                    <strong>Emergency Services:</strong> 911
+                    <strong>Emergency Services:</strong> 100
                   </p>
                 </div>
               </CardContent>
